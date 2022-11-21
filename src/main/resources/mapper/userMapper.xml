@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.dao.UserDao">
+    <resultMap id="result" type="com.example.demo.entity.User">
+        <id column="user_name" property="userName"/>
+        <result column="user_password" property="userPassword"/>
+    </resultMap>
+    <insert id="insert" parameterType="com.example.demo.entity.User">
+        insert into t_user (user_name, user_password) values (#{userName}, #{userPassword})
+    </insert>
+    <select id="find" parameterType="com.example.demo.entity.User" resultMap="result">
+        select user_name, user_password from t_user where user_name = #{userName}
+    </select>
+
+</mapper>

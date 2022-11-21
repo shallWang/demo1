@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select</title>
+    <style>
+        #password-table, #password-table tr, #password-table th, #password-table td{
+            border: 1px solid black;
+        }
+        table{
+            margin: auto;
+            width: 50%;
+        }
+        input{
+            margin: auto;
+            width: 50%;
+        }
+        #password-table th, #password-table td{
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .password-tr:hover{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+<table id="select-table">
+    <tr>
+        <td>
+            <label for="select-website">website</label>
+        </td>
+        <td>
+            <input id="select-website"/>
+        </td>
+        <td>
+            <label for="select-app">application</label>
+        </td>
+        <td>
+            <input id="select-app"/>
+        </td>
+        <td>
+            <button id="select">select</button>
+        </td>
+    </tr>
+</table>
+
+<div id="password-div"></div>
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script src="/js/select.js"></script>
+</body>
+</html>

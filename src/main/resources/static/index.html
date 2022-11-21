@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select</title>
+    <style>
+
+        table{
+            margin: auto;
+        }
+        label{
+            width: 100%;
+            display: block;
+            text-align: justify;
+        }
+        input{
+            text-align: left;
+        }
+        #login-btn{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<script src="/js/jquery-3.6.1.min.js" ></script>
+
+<table>
+    <tr>
+        <td class="label">
+            <label for="user-name">用户</label>
+        </td>
+        <td>
+            <input id="user-name">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">
+            <label for="user-password">密码</label>
+        </td>
+        <td>
+            <input id="user-password" type="password">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button style="width: 100%;margin: 0;" id="login-btn">登录</button>
+        </td>
+    </tr>
+</table>
+
+<script src="/js/login.js"></script>
+</body>
+</html>
